@@ -24,9 +24,6 @@ const AddProduct = () => {
         cpf: inputCpf.current.value
       }).then(() => navigate('/'))
     }
-
-
-
    
   }
   return (
@@ -67,7 +64,7 @@ const AddProduct = () => {
             ref={inputCpf}
           />
         </div>
-        <ButtonAddClient Path={'/'} onClick={clientAdd}/>
+        <ButtonAddClient Path={'/'} AddClick={clientAdd}/>
       </form>
     </div>
   );
