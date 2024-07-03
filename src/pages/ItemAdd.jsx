@@ -67,7 +67,7 @@ const AddProduct = () => {
             ref={inputCpf}
           />
         </div>
-        <ButtonAddClient type="button" Path={'/'}  onClick={clientAdd} className="btn">Add Record</ButtonAddClient>
+        <ButtonAddClient type="button" Path={'/'}  AddClick={clientAdd} className="btn">Add Record</ButtonAddClient>
       </form>
     </div>
   );
