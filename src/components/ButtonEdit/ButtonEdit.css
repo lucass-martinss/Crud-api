@@ -1,0 +1,53 @@
+.btnEdit{
+    margin:2% 0;
+    width:90%;
+    height: 30%;
+    position: relative;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    font-size: 80%;
+    font-weight: 600;
+    color: #382b22;
+    background: #fae849;
+    border-radius: 0.50em;
+    transition: transform 0.15s;
+    transform-style: preserve-3d;
+    text-decoration: none;
+  }
+
+.btnEdit:before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #aca039;
+    border-radius: inherit;
+
+    transform: translate3d(0, 0.75em, -1em);
+    transition: transform 0.15s, box-shadow 0.15s;
+  }
+  
+.btnEdit:hover {
+    background: #fddb17;
+    transform: translate(0, 0.25em);
+  }
+.btnEdit:hover::before {
+
+    transform: translate3d(0, 0.5em, -5em);
+  }
+.btnEdit:active {
+    background:  #fae102;
+    transform: translate(0em, 0.75em);
+  }
+.btnEdit:active::before {
+    box-shadow: 0 0 0 2px #f6fa01, 0 0 #f6fa01;
+    transform: translate3d(0, 0, -1em);
+  }

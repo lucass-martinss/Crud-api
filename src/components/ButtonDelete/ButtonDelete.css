@@ -1,0 +1,53 @@
+.btnDel{
+    margin:2% 0;
+    width:80%;
+    height: 30%;
+    position: relative;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    font-size: 80%;
+    font-weight: 600;
+    color: #ffffff;
+    background: #ff3333;
+    border-radius: 0.50em;
+    transition: transform 0.15s;
+    transform-style: preserve-3d;
+    text-decoration: none;
+  }
+
+.btnDel:before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #d3240d;
+    border-radius: inherit;
+
+    transform: translate3d(0, 0.75em, -1em);
+    transition: transform 0.15s, box-shadow 0.15s;
+  }
+  
+.btnDel:hover {
+    background: #f74949;
+    transform: translate(0, 0.25em);
+  }
+.btnDel:hover::before {
+
+    transform: translate3d(0, 0.5em, -5em);
+  }
+.btnDel:active {
+    background:  #910202;
+    transform: translate(0em, 0.75em);
+  }
+.btnDel:active::before {
+    box-shadow: 0 0 0 2px #fa0202, 0 0 #f50a0a;
+    transform: translate3d(0, 0, -1em);
+  }
