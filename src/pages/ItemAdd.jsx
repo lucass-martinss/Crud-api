@@ -18,12 +18,6 @@ const AddProduct = () => {
  
     } else {
       await api.post('/clients',{
-        headers: {                  
-            "Access-Control-Allow-Origin": "https://crud-api-roan.vercel.app/add",
-            "Access-Control-Allow-Headers": "Authorization", 
-            "Access-Control-Allow-Methods": "GET, POST, OPTIONS, PUT, PATCH, DELETE" ,
-            "Content-Type": "application/json;charset=UTF-8"                   
-        },
         name: inputName.current.value,
         telefone: inputTelefone.current.value,
         email: inputEmail.current.value,
