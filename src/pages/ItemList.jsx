@@ -23,7 +23,7 @@ function ItemList() {
   return (
     <div className="container mt-5">
       <h2 className="mb-4">client List</h2>
-      <ButtonAddClient/>
+      <ButtonAddClient Path={'/add'}/>
       <table className="table table-striped">
         <thead className="thead-dark">
           <tr>

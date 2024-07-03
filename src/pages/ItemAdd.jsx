@@ -2,6 +2,7 @@ import { useRef } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { useNavigate } from 'react-router-dom';
 import api from '../services/api';
+import ButtonAddClient from '../components/ButtonAddClient/Buttons';
 const AddProduct = () => {
 
   const navigate = useNavigate()
@@ -66,7 +67,7 @@ const AddProduct = () => {
             ref={inputCpf}
           />
         </div>
-        <button type="button" onClick={clientAdd} className="btn">Add Product</button>
+        <ButtonAddClient type="button" Path={'/'}  onClick={clientAdd} className="btn">Add Record</ButtonAddClient>
       </form>
     </div>
   );
