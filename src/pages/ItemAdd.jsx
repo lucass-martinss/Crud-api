@@ -64,7 +64,7 @@ const AddProduct = () => {
             ref={inputCpf}
           />
         </div>
-        <ButtonAddClient  AddClick={clientAdd}/>
+        <ButtonAddClient  AddClick={() => clientAdd()}/>
       </form>
     </div>
   );
